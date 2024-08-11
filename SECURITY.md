@@ -19,7 +19,8 @@ If you discover a security vulnerability within this repository, we encourage yo
 
 ### How to Report
 
-**Do not submit an issue or pull request**: this might reveal the vulnerability.
+> [!IMPORTANT]
+> **Do not submit an issue or pull request**: this might reveal the vulnerability.
 
 Instead, you should:
 
