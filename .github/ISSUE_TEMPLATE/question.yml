@@ -15,7 +15,7 @@ body:
     attributes:
       label: Question
       description: Clearly state your question.
-      placeholder: "What is the purpose of the `AnimeSnap` tool?"
+      placeholder: "What is the purpose of the this tool?"
   - type: textarea
     validations:
       required: true
@@ -48,8 +48,8 @@ body:
     validations:
       required: true
     attributes:
-      label: AnimeSnap version
-      description: Run `AnimeSnap -V` to check.
+      label: Program version
+      description: Run with the argument -V to check.
       placeholder: "1.0"
   - type: textarea
     attributes:
