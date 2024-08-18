@@ -1,5 +1,6 @@
 name: ❓ Ask a question
 description: Submit a question to get help or clarification 🙋‍♂️
+title: "[QUESTION]: "
 labels: ["question"]
 assignees:
   - YisusChrist
@@ -44,6 +45,13 @@ body:
     attributes:
       label: OS / Linux distribution
       placeholder: Windows 10, Ubuntu 20.04, Arch Linux, macOS 10.15...
+  - type: dropdown
+    attributes:
+      label: If using WSL on Windows, which version of WSL
+      description: Run `wsl -l -v` to check.
+      options:
+        - WSL1
+        - WSL2
   - type: input
     validations:
       required: true
