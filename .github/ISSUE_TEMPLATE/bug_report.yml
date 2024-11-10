@@ -5,12 +5,17 @@ labels: ["bug"]
 assignees:
   - YisusChrist
 body:
-  - type: markdown
+  - type: checkboxes
     attributes:
-      value: |
-        ## Self Check
-        - Look for similar errors in existing [GitHub Issues](../issues?q=is%3Aissue) (open or closed).
-        - Take a look at the [documentation](../wiki) for help.
+      label: Self Check
+      description: Please confirm and check all the following options.
+      options:
+        - label: Add a very descriptive title here.
+          required: true
+        - label: Look for similar errors in existing [GitHub Issues](../issues?q=is%3Aissue) (open or closed).
+          required: true
+        - label: Take a look at the [documentation](../wiki) for help.
+          required: true
   - type: textarea
     validations:
       required: true
@@ -40,12 +45,24 @@ body:
       label: Screenshots and recordings
       description: |
         If applicable, add screenshots to help explain your problem. You can also record an asciinema session: https://asciinema.org
-  - type: input
+  - type: dropdown
     validations:
       required: true
     attributes:
-      label: OS / Linux distribution
-      placeholder: Windows 10, Ubuntu 20.04, Arch Linux, macOS 10.15...
+      label: Operating System
+      description: What operating system are you on? Windows 10, Ubuntu 20.04, Arch Linux, macOS 10.15...
+      options:
+        - Linux
+        - Windows
+        - macOS
+        - Other
+  - type: textarea
+    attributes:
+      label: Operating System Details
+      description: You can add more details about your operating system here, in particular if you chose "Other".
+      placeholder: |
+        Windows 11 24H2 Build 26100.2033
+        Archlinux 6.11.5
   - type: dropdown
     attributes:
       label: If using WSL on Windows, which version of WSL
@@ -58,7 +75,7 @@ body:
       required: true
     attributes:
       label: Program version
-      description: Run with the argument -V to check.
+      description: Run with the argument `-V` to check.
       placeholder: "1.0"
   - type: textarea
     attributes:
