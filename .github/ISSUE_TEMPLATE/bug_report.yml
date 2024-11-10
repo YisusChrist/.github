@@ -51,6 +51,7 @@ body:
     attributes:
       label: Operating System
       description: What operating system are you on? Windows 10, Ubuntu 20.04, Arch Linux, macOS 10.15...
+      multiple: true
       options:
         - Linux
         - Windows
